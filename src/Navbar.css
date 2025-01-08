@@ -1,0 +1,109 @@
+:root
+{
+
+    --text-color1:#ffffff;
+    --text-color2:black;
+    --main-color1:#F46800;
+    --main-color2:#E60300;
+    --alt-color:#524e4b;
+    --ann-color: #c7c6d3;
+    --h1-font:4rem;
+    --h2-font:3rem;
+    --p-font:1rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 0.5rem 2rem;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 2.5rem;
+}
+
+
+.navbar .logo img {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+
+.navbar .location {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 400px !important;  /* Adjust as necessary */
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    gap: 7px;
+    background-color: #524e4b;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.navbar .location i {
+    color: #F46800; /* Highlight the location icon */
+}
+
+/* Search bar styling */
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    flex: 2; 
+    margin: 0 1.5rem;
+}
+
+.navbar .search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.navbar .search-bar button {
+    background-color: #F46800;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-left: -2rem;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .search-bar button i{
+    padding: 0%;
+}
+
+.navbar .search-bar button:hover {
+    background-color: #E60300; /* Darker hover color */
+}
+
+/* Help, Sign In, and Cart */
+.help, .sign-in, .cartt {
+    font-size: 1.1rem;
+    margin-left: 1.5rem;
+}
+
+.help a, .sign-in a, .cartt a {
+    color: white;
+    text-decoration: none;
+}
+
+.cartt i {
+    font-size: 1.5rem;
+}
+
+.help a:hover, .sign-in a:hover, .cartt a:hover {
+    color: #F46800; /* Highlight on hover */
+}

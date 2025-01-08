@@ -1,0 +1,45 @@
+/* Root CSS variables */
+:root {
+    --text-color1: #ffffff;
+    --text-color2: black;
+    --main-color1: #F46800;
+    --main-color2: #E60300;
+    --alt-color: #524e4b;
+    --ann-color: #c7c6d3;
+    --h1-font: 4rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(245, 87, 24, 0.979);
+}
+
+.restaurant-card:hover{
+    transform: scale(1.02);
+    background-color:var(--main-color2);
+    
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.restaurant-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.restaurant-rating, .restaurant-delivery-time, .restaurant-cuisine {
+    font-size: 1em;
+    margin: 5px 0;
+}

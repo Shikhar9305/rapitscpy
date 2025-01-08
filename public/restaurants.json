@@ -1,0 +1,101 @@
+{
+    "restaurants": [
+      {
+        "name": "Restaurant 1",
+        "image": "/Assets/restaurant_images/R1.jpg",
+        "altText": "Restaurant 1",
+        "rating": "★★★★☆",
+        "deliveryTime": "25 mins",
+        "cuisine": "Italian"
+      },
+      {
+        "name": "Restaurant 2",
+        "image": "/Assets/restaurant_images/R2.avif",
+        "altText": "Restaurant 2",
+        "rating": "★★★☆☆",
+        "deliveryTime": "35 mins",
+        "cuisine": "Chinese"
+      },
+      {
+        "name": "Restaurant 3",
+        "image": "/Assets/restaurant_images/R3.avif",
+        "altText": "Restaurant 3",
+        "rating": "★★★★☆",
+        "deliveryTime": "20 mins",
+        "cuisine": "Mexican"
+      },
+      {
+        "name": "Restaurant 4",
+        "image": "/Assets/restaurant_images/R4.avif",
+        "altText": "Restaurant 4",
+        "rating": "★★★☆☆",
+        "deliveryTime": "40 mins",
+        "cuisine": "Indian"
+      },
+      {
+        "name": "Restaurant 5",
+        "image": "/Assets/restaurant_images/R5.avif",
+        "altText": "Restaurant 5",
+        "rating": "★★★☆☆",
+        "deliveryTime": "30 mins",
+        "cuisine": "Thai"
+      },
+      {
+        "name": "Restaurant 6",
+        "image": "/Assets/restaurant_images/R6.jpg",
+        "altText": "Restaurant 6",
+        "rating": "★★★★☆",
+        "deliveryTime": "25 mins",
+        "cuisine": "Japanese"
+      },
+      {
+        "name": "Restaurant 7",
+        "image": "/Assets/restaurant_images/R7.avif",
+        "altText": "Restaurant 7",
+        "rating": "★★★☆☆",
+        "deliveryTime": "30 mins",
+        "cuisine": "Korean"
+      },
+      {
+        "name": "Restaurant 8",
+        "image": "/Assets/restaurant_images/R8.avif",
+        "altText": "Restaurant 8",
+        "rating": "★★★☆☆",
+        "deliveryTime": "35 mins",
+        "cuisine": "French"
+      },
+      {
+        "name": "Restaurant 9",
+        "image": "/Assets/restaurant_images/R9.avif",
+        "altText": "Restaurant 9",
+        "rating": "★★★★☆",
+        "deliveryTime": "20 mins",
+        "cuisine": "Greek"
+      },
+      {
+        "name": "Restaurant 10",
+        "image": "/Assets/restaurant_images/R10.avif",
+        "altText": "Restaurant 10",
+        "rating": "★★★☆☆",
+        "deliveryTime": "45 mins",
+        "cuisine": "Spanish"
+      },
+      {
+        "name": "Restaurant 11",
+        "image": "/Assets/restaurant_images/R11.avif",
+        "altText": "Restaurant 11",
+        "rating": "★★★☆☆",
+        "deliveryTime": "40 mins",
+        "cuisine": "Turkish"
+      },
+      {
+        "name": "Restaurant 12",
+        "image": "/Assets/restaurant_images/R12.avif",
+        "altText": "Restaurant 12",
+        "rating": "★★★★☆",
+        "deliveryTime": "30 mins",
+        "cuisine": "American"
+      }
+    ]
+  }
+  

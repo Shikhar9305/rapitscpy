@@ -1,0 +1,22 @@
+:root
+{
+
+    --text-color1:#ffffff;
+    --text-color2:black;
+    --main-color1:#F46800;
+    --main-color2:#E60300;
+    --alt-color:#524e4b;
+    --ann-color: #c7c6d3;
+    --h1-font:4rem;
+    --h2-font:3rem;
+    --p-font:1rem;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+ 
