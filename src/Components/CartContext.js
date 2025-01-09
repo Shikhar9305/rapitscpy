@@ -1,10 +1,33 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
-  const [bookingDetails, setBookingDetails] = useState(null);
+  const [cartItems, setCartItems] = useState(() => {
+    // Load cart items from localStorage if available
+    const savedCart = localStorage.getItem("cartItems");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
+  
+  const [bookingDetails, setBookingDetails] = useState(() => {
+    // Load booking details from localStorage if available
+    const savedBooking = localStorage.getItem("bookingDetails");
+    return savedBooking ? JSON.parse(savedBooking) : null;
+  });
+
+  // Sync cartItems with localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }, [cartItems]);
+
+  // Sync bookingDetails with localStorage whenever it changes
+  useEffect(() => {
+    if (bookingDetails) {
+      localStorage.setItem("bookingDetails", JSON.stringify(bookingDetails));
+    } else {
+      localStorage.removeItem("bookingDetails");
+    }
+  }, [bookingDetails]);
 
   const addToCart = (item) => {
     setCartItems((prevItems) => {
@@ -24,7 +47,6 @@ export const CartProvider = ({ children }) => {
       }
     });
   };
-  
 
   const updateQuantity = (name, quantity) => {
     setCartItems((prevItems) =>
@@ -45,9 +67,11 @@ export const CartProvider = ({ children }) => {
   const addBookingDetails = (details) => {
     setBookingDetails(details);
   };
+  
   const removeBookingDetails = () => {
     setBookingDetails(null);
   };
+
   return (
     <CartContext.Provider
       value={{

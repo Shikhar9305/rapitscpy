@@ -26,6 +26,7 @@ root.render(  // Use root.render instead of react_dom.render
       <CartProvider>
         <App />
       </CartProvider>
+      
     </ClerkProvider>
   </React.StrictMode>
 );

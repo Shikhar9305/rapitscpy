@@ -39,6 +39,9 @@
     justify-content: space-around;
     align-items: center;
   }
+  .cart-item-details h3 {
+    width: 60px;
+  }
   .quantity-controls button{
       background-color:#F46800;
       padding: 5px 13px;
