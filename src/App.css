@@ -7,3 +7,17 @@
   scroll-behavior: smooth;
   font-family: "Syne", sans-serif;
 }
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cl-internal-1dauvpw
+{
+  display: none;
+}
+.dev-banner
+{
+display: none;
+}

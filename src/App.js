@@ -4,9 +4,9 @@ import LandingPage from './Components/LandingPage';
 import HomePage from './Components/HomePage';
 import RestaurantResult from './Components/RestaurantResult';
 import Cart from './Components/Cart';
+import { SignIn } from "@clerk/clerk-react";  
 
-
-const App = () => {
+function App() {
   return (
     <Router>
       <Routes>
@@ -14,9 +14,10 @@ const App = () => {
         <Route path="/home" element={<HomePage />} />
         <Route path="/restaurant/:id" element={<RestaurantResult />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/sign-in" element={<SignIn forceRedirectUrl="/cart" />} /> {/* Clerk SignIn */}
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;

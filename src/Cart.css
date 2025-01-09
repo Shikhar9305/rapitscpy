@@ -1,18 +1,26 @@
 .cart-page {
     padding: 20px;
+    
 
+  }
+  .cart-content
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   
   .cart-items {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 800px;
   }
   
   .cart-item {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
@@ -39,7 +47,18 @@
       border-radius: 5px;
       cursor: pointer;
   }
-  .rmv{
+  .cart-summary
+  {
+    
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: left;
+      padding: 50px;
+      box-shadow: 0 4px 6px rgba(245, 87, 24, 0.979);
+  }
+  .remove-booking,.checkout-btn ,.rmv{
     background-color: #F46800;
     padding: 5px 10px;
     color: white;
@@ -54,4 +73,31 @@
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
+  }
+
+  .cl-internal-1dauvpw
+  {
+    display: none;
+  }
+  .cl-internal-phfxlr
+  {
+    margin-left: 450px;
+    margin-top: 100px;
+  }
+  .checkout-btn:hover
+  {
+   background-color: #E60300;
+  }
+  .rmv:hover
+  {
+   background-color: #E60300;
+  }
+  .cl-formButtonPrimary 
+  {
+    background-color: #F46800;
+    border:none;
+  }
+  .cl-formButtonPrimary:hover
+  {
+    background-color: #E60300;
   }
